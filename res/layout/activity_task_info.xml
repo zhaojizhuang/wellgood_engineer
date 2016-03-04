@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskInfoActivity" 
+    android:background="@color/background"
+     android:orientation="vertical" >
+<!-- 标题栏 -->
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title_backgroud"> 
+                                    <TextView
+                                        android:id="@+id/task_info_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:textColor="@color/title_text_color"
+                                        android:text="@string/task_info_title" 
+                                        android:textSize="@dimen/title_text_size"/>
+
+                                    <ImageView
+                                        android:id="@+id/task_info_return"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:onClick="onClick"
+                                        android:paddingLeft="@dimen/return_padding_left"
+                                        android:src="@drawable/returnbtn" />
+
+    </RelativeLayout>
+
+<com.wellgood.pulltorefresh.PullToRefreshView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/task_info_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@color/background"
+        android:orientation="vertical" >
+
+      <ListView
+          android:id="@+id/nodesListview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+      </ListView>
+        
+        </com.wellgood.pulltorefresh.PullToRefreshView>
+
+</LinearLayout>

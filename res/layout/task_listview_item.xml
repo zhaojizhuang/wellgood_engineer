@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    tools:context=".ListActivity" 
+    >
+
+
+     <RelativeLayout
+           android:id="@+id/listviewitem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/head_rl"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom|left"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/user_photo"
+                      android:layout_width="fill_parent"
+    				android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_launcher">
+                    </ImageView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/msg_src"
+                 android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/head_rl"
+                android:text="标题"
+                android:textColor="@color/paper_price"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/msg_sum"
+                  android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+                android:layout_below="@id/msg_src"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/head_rl"
+                android:text="摘要。。。"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/type"
+                 android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="更新时间"
+              
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/modifyDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="20150910"
+                android:textColor="@color/paper_price"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+</LinearLayout>

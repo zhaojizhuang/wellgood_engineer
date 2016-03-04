@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <!-- Login progress -->
+
+
+    <!-- Login form -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title_backgroud" > 
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+                android:textColor="@color/title_text_color"
+            android:text="@string/registe_title"
+            android:textSize="@dimen/title_text_size" />
+
+        <ImageView
+            android:id="@+id/registe_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/login_title"
+            android:layout_alignParentLeft="true"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/return_padding_left"
+            android:src="@drawable/returnbtn" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bottom_line_height"
+        android:background="@color/title_bottom_line_color" />
+
+    <ScrollView
+        android:id="@+id/register_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/registe_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_edit_padding"
+                  android:background="@drawable/edit_bgcolor"
+                android:clickable="false"
+                android:hint="@string/prompt_reg_username"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textSize="@dimen/edit_text_size" />
+
+            <EditText
+                android:id="@+id/registe_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_edit_padding"
+                android:background="@drawable/edit_bgcolor"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/edit_text_size" />
+            
+                            <EditText
+                    android:id="@+id/registe_phonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/login_edit_padding"
+                    android:background="@drawable/edit_bgcolor"
+                    android:hint="@string/prompt_reg_phonenumber"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="numberSigned"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edit_text_size" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                  android:layout_marginTop="@dimen/login_edit_padding">
+
+                <EditText
+                    android:id="@+id/registe_checknumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+   
+                    android:background="@drawable/edit_bgcolor"
+                    android:hint="@string/prompt_check_number"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="numberSigned"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/edit_text_size" />
+                <Button
+                    android:id="@+id/send_checknumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/registe_checknumber"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/layout_margin"
+                    android:background="@drawable/send_trynumber_btn"
+                    android:onClick="onClick"
+                    android:text="@string/send_checknumber"
+                    android:textColor="@color/send_trynumber_color"
+                    android:textSize="@dimen/edit_text_size" />
+                <Button
+                    android:visibility="invisible"
+                    android:id="@+id/try_checknumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/registe_checknumber"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/layout_margin"
+                    android:background="@drawable/try_phonenumber"
+                    android:onClick="onClick"
+                    android:text="@string/try_checknumber"
+                    android:textColor="@drawable/text_selector_trynumber"
+                    android:textSize="@dimen/edit_text_size" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/registe_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+             
+                android:background="@drawable/login_btn"
+                android:onClick="onClick"
+                android:text="@string/action_sign_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size"
+                android:layout_margin="@dimen/layout_margin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin" >
+
+                <CheckBox
+                    android:id="@+id/accept_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accept_check"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/login_forget_text_size" />
+
+                <TextView
+                      android:textColor="@drawable/text_selector_trynumber"
+                    android:onClick="onClick"
+                    android:id="@+id/wellgood_contract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/accept_check"
+                     android:textSize="@dimen/login_forget_text_size"
+                    android:text="@string/wellgood_contract" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">威固工程版</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_title">登录</string>
+    <string name="login_registe_string">注册</string>
+    <string name="title_activity_registe">RegisteActivity</string>
+    <string name="registe_title">注册</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">请输入用户名或手机号</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="confirm">确认</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">选项不能为空</string>
+    <string name="checkbox">记住密码</string>
+    <string name="forget_password">忘记密码</string>
+
+    <!-- Strings related to registe -->
+    <string name="prompt_reg_username">请输入您的账号，不少于6位</string>
+    <string name="prompt_reg_password">请输入密码</string>
+    <string name="error_reg_field_required">选项不能为空</string>
+    <string name="prompt_reg_phonenumber">请输入您的手机号</string>
+    <string name="prompt_check_number">请输入验证码</string>
+    <string name="accept_check">我已阅读并同意</string>
+    <string name="wellgood_contract">《威固网络用户协议》</string>
+    <string name="try_checknumber">25后重新发送</string>
+    <string name="send_checknumber">发送验证码</string>
+    <string name="title_activity_reset_password">ResetPassword</string>
+    <string name="rest_pwd_title">密码重置</string>
+    <string name="input_phonenumber">请输入您的手机号</string>
+    <string name="title_activity_set_new_password">SetNewPassword</string>
+    <string name="tab_task_accept">已接收任务</string>
+    <string name="tab_task_unaccept">未接收任务</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="title_activity_task_info">TaskInfoActivity</string>
+    
+    <!-- 任务详情相关 -->
+    <string name="task_info_title">任务详情</string>
+    
+
+</resources>
